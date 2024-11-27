@@ -20,3 +20,7 @@ body {
   --yellow-100: #f9eee1;
   --yellow-500: #ffcb6b;
 }
+
+#card-2 div{
+line-height: 1.8rem;
+}
