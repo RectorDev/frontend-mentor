@@ -15,14 +15,3 @@ body {
   flex-direction: column;
   height: 100vh;
 }
-.contain {
-  width: 450px;
-  height: 450px;
-  border-radius: 25px;
-  background: rgb(29, 37, 48);
-  background: linear-gradient(
-    0deg,
-    rgba(29, 37, 48, 1) 79%,
-    rgba(25, 37, 83, 1) 100%
-  );
-}
