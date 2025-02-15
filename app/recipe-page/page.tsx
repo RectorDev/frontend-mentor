@@ -3,9 +3,9 @@ import React from "react";
 
 function page() {
   return (
-    <div className="flex items-center justify-center h-screen bg-[#f3e5d8]  text-zinc-800 font-outfit">
-      <div className="max-w-[480px] bg-white sm:p-10 rounded-2xl">
-        <Image className="object-fill sm:rounded-xl" src={"/recipe-page/images/image-omelette.jpeg"} alt="food" width={480} height={260} />
+    <div className="flex sm:items-center justify-center min-h-screen bg-[#f3e5d8]  text-zinc-800 font-outfit">
+      <div className="max-w-[720px] bg-white sm:p-10 rounded-2xl">
+        <Image className="object-contain sm:rounded-xl" src={"/recipe-page/images/image-omelette.jpeg"} alt="food" width={720} height={260} />
         <h1 className="font-youngSerif">Simple Omelette Recipe</h1>
         <p>
           An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables,
@@ -53,6 +53,38 @@ function page() {
             <span>Optional fillings: cheese, diced vegetables, cooked meats, herbs</span>
           </li>
         </ul>
+
+        <hr />
+        <h2 className="text-[#874933] font-youngSerif">Instructions</h2>
+        <ol className="list-decimal font-outfit">
+          <li className="font-sans font-semibold ml-5 pr-3 marker:text-[#874933]">
+            <span className="relative left-4 font-outfit font-normal ">
+              Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.
+            </span>
+          </li>
+          <li className="font-sans font-semibold ml-5 pr-3 marker:text-[#874933]">
+            <span className="relative left-4 font-outfit font-normal ">Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.</span>
+          </li>
+          <li className="font-sans font-semibold ml-5 pr-3 marker:text-[#874933]">
+            <span className="relative left-4 font-outfit font-normal ">
+              Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.
+            </span>
+          </li>
+          <li className="font-sans font-semibold ml-5 pr-3 marker:text-[#874933]">
+            <span className="relative left-4 font-outfit font-normal ">
+              Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the
+              omelette.
+            </span>
+          </li>
+          <li className="font-sans font-semibold ml-5 pr-3 marker:text-[#874933]">
+            <span className="relative left-4 font-outfit font-normal ">
+              Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.
+            </span>
+          </li>
+          <li className="font-sans font-semibold ml-5 pr-3 marker:text-[#874933]">
+            <span className="relative left-4 font-outfit font-normal ">Enjoy: Serve hot, with additional salt and pepper if needed.</span>
+          </li>
+        </ol>
       </div>
     </div>
   );
