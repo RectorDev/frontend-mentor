@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Outfit, Young_Serif } from "next/font/google";
 import "./globals.css";
 
+const youngSerif = Young_Serif({ variable: "--font-young-serif", subsets: ["latin"], weight: ["400"] });
+const outfit = Outfit({ variable: "--font-outfit" });
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -24,10 +26,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${youngSerif.variable}  antialiased`}>
         {children}
+        <div className="attribution">
+          Challenge by{" "}
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by <a href="#">Your Name Here</a>.
+        </div>
       </body>
     </html>
   );
