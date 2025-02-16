@@ -1,5 +1,7 @@
-
 export default function Home() {
-  return <>
-  <div className="">ppp</div></>;
+  return (
+    <>
+      <div className=""></div>
+    </>
+  );
 }

@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Outfit, Young_Serif, Inter } from "next/font/google";
+import { Geist, Geist_Mono, Outfit, Young_Serif, Inter,Manrope } from "next/font/google";
 import "./globals.css";
 
+const manrope= Manrope({variable:"--font-manrope"}) 
 const inter = Inter({variable:"--font-inter"});
 const youngSerif = Young_Serif({ variable: "--font-young-serif", subsets: ["latin"], weight: ["400"] });
 const outfit = Outfit({ variable: "--font-outfit" });
@@ -27,7 +28,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${youngSerif.variable} ${inter.variable}  antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${youngSerif.variable} ${inter.variable} ${manrope.variable}  antialiased`}>
         <main>{children}</main>
         <footer className="attribution">
           Challenge by{" "}

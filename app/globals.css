@@ -10,7 +10,7 @@
 body {
   color: var(--foreground);
   background: var(--background);
-font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .attribution {
   font-size: 11px;
@@ -20,6 +20,13 @@ font-family: Arial, Helvetica, sans-serif;
   color: hsl(228, 45%, 44%);
 }
 
+.filter-white {
+  filter: brightness(0) invert(1);
+}
+
+.filter-dark {
+  filter: brightness(0) saturate(100%) invert(35%) sepia(11%) saturate(1137%) hue-rotate(182deg) brightness(94%) contrast(87%);
+}
 /* Padding Utilities */
 .padding-sm {
   @apply px-2 sm:px-4 xl:px-6 2xl:px-8 py-2 sm:py-3 xl:py-4 2xl:py-5;
@@ -378,12 +385,12 @@ font-family: Arial, Helvetica, sans-serif;
   @apply gap-48 sm:gap-52 xl:gap-56 2xl:gap-60;
 }
 
-.max-container{
-max-width: 1440px;
-margin: 0 auto;
+.max-container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 .pos-center {
-position: absolute;
-left: 50%;
-transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
