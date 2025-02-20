@@ -9,7 +9,7 @@ import { useFilterStore } from "./store";  // Zustand state management store
 
 // Function to fetch countries data from local JSON file
 const getCountries = async (): Promise<Country[]> => {
-  const response = await fetch('/data.json');
+  const response = await fetch('./data.json');
   const data = await response.json();
   return data;
 };
@@ -72,7 +72,7 @@ export default function Page() {
             <div className="border rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
               {/* Country flag */}
               <Image 
-                width={100} 
+                width={870} 
                 height={100} 
                 src={country.flags.png} 
                 alt={`Flag of ${country.name}`} 
