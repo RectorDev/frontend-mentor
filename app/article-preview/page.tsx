@@ -4,11 +4,11 @@ import { useState } from "react";
 import Share from "@/public/article-preview/images/icon-share.svg";
 
 export default function page() {
-  const [isActive, setIsActive] = useState<boolean>(true);
+  const [isActive, setIsActive] = useState<boolean>(false);
   return (
     <div className="min-h-screen bg-[#edf2f8] flex items-center justify-center font-manrope">
-      <div className="bg-white rounded-lg max-md:flex-col flex  md:max-w-[820px] text-[#49556b] font-manrope">
-        <Image className="md:rounded-s-lg max-md:rounded-b-lg"  src={"/article-preview/images/drawers.jpg"} width={500} height={120} alt="article image" />
+      <div className="bg-white rounded-lg max-md:flex-col max-md:max-w-[450px] flex  md:max-w-[820px] text-[#49556b] font-manrope">
+        <Image className="md:rounded-s-lg max-md:rounded-b-lg"  src={"/article-preview/images/drawers.jpg"} width={450} height={120} alt="article image" />
         <div className="md:p-12 p-6">
           <h2 className="text-[#49556b] font-semibold text-2xl">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
           <p className="pt-6  text-[#59657a] text-sm ">
