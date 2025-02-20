@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Outfit, Young_Serif, Inter,Manrope } from "next/font/google";
+import { Geist, Geist_Mono, Outfit, Young_Serif, Inter, Manrope } from "next/font/google";
 import "./globals.css";
 
-const manrope= Manrope({subsets:["latin"],variable:"--font-manrope"}) 
-const inter = Inter({variable:"--font-inter",subsets:["latin"]});
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin"] });
 const youngSerif = Young_Serif({ variable: "--font-young-serif", subsets: ["latin"], weight: ["400"] });
-const outfit = Outfit({ variable: "--font-outfit",subsets["latin"] });
+const outfit = Outfit({ variable: "--font-outfit", subsets: ["latin"] });
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
